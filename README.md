@@ -33,3 +33,6 @@ pip install meilisearch
 pip install tabulate
 ```
 
+- 웹 Backend, frontend 개발
+pip install stramlit
+```
