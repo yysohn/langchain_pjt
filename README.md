@@ -34,5 +34,10 @@ pip install tabulate
 ```
 
 - 웹 Backend, frontend 개발
-pip install stramlit
+pip install streamlit
+```
+
+# 실행방법
+```
+streamlit run main_app.py
 ```
