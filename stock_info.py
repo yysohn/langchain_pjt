@@ -29,7 +29,7 @@ class Stock:
         cash_flow = self.ticker.cashflow.loc[['Operating Cash Flow', 
                                               'Investing Cash Flow',
                                               'Financing Cash Flow']].iloc[:, :4].to_markdown() 
-        return f"""
+        financial_state = f"""
         # 손익계산서
         {income_stmt} 
         # 대차대조표
@@ -37,6 +37,8 @@ class Stock:
         # 현금흐름표
         {cash_flow} 
         """
+        print(financial_state)
+        return financial_state
 
     # 주식거래량
     def get_stock_volume(self):
